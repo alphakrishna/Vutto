@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from '../assets/Vutto-logo.png';
 import { Search, Menu, X, ChevronDown, ArrowLeft } from "lucide-react";
-import homeIcon from '../assets/homeIcon.png'; 
+import homeIcon from '/homeIcon.png'; 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [selectedCity, setSelectedCity] = useState("Bangalore");

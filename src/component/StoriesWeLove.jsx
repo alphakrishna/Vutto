@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import manPhoto from '/public/Man_photo.png';
 
 const StoriesWeLove = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -10,21 +11,18 @@ const StoriesWeLove = () => {
       quote: "I didn't think selling my bike was so easy, Zuto helped me from figuring out a quote to the final inspection. They even picked up the bike from my location",
       author: "John Doe",
       vehicle: "2017 Hero Karizma",
-      image: "src/assets/Man_photo.png" // Add your image path here
     },
     {
       id: 2,
       quote: "Amazing service and quick process. The team was professional and made everything hassle-free. Highly recommend to anyone looking to sell their bike.",
       author: "Sarah Smith",
       vehicle: "2019 Royal Enfield",
-      image: "src/assets/Man_photo.png" // Add your image path here
     },
     {
       id: 3,
       quote: "Great experience from start to finish. The quote was fair and the pickup was convenient. Will definitely use again in the future.",
       author: "Mike Johnson",
       vehicle: "2020 Bajaj Pulsar",
-      image: "src/assets/Man_photo.png" // Add your image path here
     }
   ];
 
@@ -79,7 +77,7 @@ const StoriesWeLove = () => {
                       <div className="w-2/5 relative">
                         <div className="aspect-[3/4] bg-gradient-to-br from-slate-800 via-slate-700 to-slate-600 relative overflow-hidden rounded-l-3xl">
                           <img 
-                            src={story.image} 
+                            src={manPhoto}
                             alt={`${story.author} with their ${story.vehicle}`}
                             className="absolute inset-0 w-full h-full object-cover"
                           />
@@ -121,7 +119,7 @@ const StoriesWeLove = () => {
                     <div className="w-1/2 relative">
                       <div className="aspect-[4/3] bg-gradient-to-br from-slate-800 via-slate-700 to-slate-600 relative overflow-hidden">
                         <img 
-                          src={story.image} 
+                          src={manPhoto}
                           alt={`${story.author} with their ${story.vehicle}`}
                           className="absolute inset-0 w-full h-full object-cover"
                         />

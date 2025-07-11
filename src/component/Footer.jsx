@@ -7,6 +7,7 @@ import {
   Youtube,
   Mail
 } from "lucide-react";
+import footerImage from '/public/Footer.png';
 
 const Footer = () => {
   return (
@@ -83,7 +84,7 @@ const Footer = () => {
       </div>
       <div className="max-w-6xl mx-auto px-4 mt-8">
           <img 
-            src="src\assets\Footer.png" 
+            src={footerImage} 
             alt="Bike illustration" 
             className="w-full h-full object-contain"
           />

@@ -3,6 +3,7 @@ import { FileText, Search, Handshake, MessageCircle } from "lucide-react";
 import img1 from '../assets/sell-1.png';
 import img2 from '../assets/sell-2.png';
 import img3 from '../assets/sell-3.png';
+import HeroBikeImage from '/public/Hero-Bike.png';
 
 const HeroSection = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -74,7 +75,7 @@ const HeroSection = () => {
             <div className="relative">
               {/* Your bike image */}
               <img 
-                src="src/assets/Hero-Bike.png" 
+                src={HeroBikeImage}
                 alt="Bike selling illustration" 
                 className="w-full max-w-md"
                 style={{ mixBlendMode: 'multiply' }}
@@ -93,7 +94,7 @@ const HeroSection = () => {
           <div className="relative">
             {/* Your bike image for mobile */}
             <img 
-              src="src/assets/Hero-Bike.png" 
+              src={HeroBikeImage}
               alt="Bike selling illustration" 
               className="w-full max-w-xs"
               style={{ mixBlendMode: 'multiply' }}
